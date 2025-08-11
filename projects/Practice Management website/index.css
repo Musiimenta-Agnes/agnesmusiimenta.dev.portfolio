@@ -1,0 +1,43 @@
+.page-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+   
+  background-color: ghostwhite;
+    overflow: hidden;
+    
+
+}
+li {
+    float: left;
+
+}
+li a {
+    display: block;
+   color: rgb(3, 1, 16);
+    padding: 30px 38px;
+    
+    text-decoration: none;
+}
+li a:hover {
+    color: rgb(242, 11, 142);
+
+}
+
+body {
+    background-image: url(./images/White\ image\ %.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hover-enlarge {
+    transition: transform 0.3s ease;
+}
+.hover-enlarge:hover {
+    transform: scale(1.2);
+}
