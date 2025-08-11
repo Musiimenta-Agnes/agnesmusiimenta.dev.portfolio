@@ -1,0 +1,18 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const len = window.location.pathname.split("/").length;
+  const locat = window.location.pathname.split("/")[len - 1];
+  if (locat === "contact-us") {
+    let btn = document.querySelector(".btn");
+    btn.classList.add("btn-primary");
+    btn.classList.add('btn-sm');
+  }
+});
+
+// window.addEventListener('scroll', function(){
+//   if(window.scrollY > 10){
+//     document.querySelector(".header-wrapper").classList.add("scrolled");
+//   }
+//   else{
+//     document.querySelector(".header-wrapper").classList.remove("scrolled");
+//   }
+// });

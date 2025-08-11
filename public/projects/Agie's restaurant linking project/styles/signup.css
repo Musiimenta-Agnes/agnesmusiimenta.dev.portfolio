@@ -1,0 +1,20 @@
+.form {
+   border-style: solid;
+    width: 300px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 200px;
+    border-radius: 4px;
+    margin: 10px;
+    border: 100px;
+    background-color: rgb(232, 237, 237);
+}
+
+
