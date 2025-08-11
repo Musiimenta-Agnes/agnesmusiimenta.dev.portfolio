@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import AOS from 'aos'
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 function ProjectsPage() {
@@ -44,16 +45,7 @@ function ProjectsPage() {
                   blending creativity with technical expertise.
                 </p>
                 <div style={{display:'flex',justifyContent:'center'}}>
-                <a
-                  href="/"
-                  className="category-btn"
-                  style={{
-                    animation: "pulse 2s ease-in-out infinite",
-                    border: "2px solid rgba(52, 152, 219, 0.7)",
-                  }}
-                >
-                  My fruits Business &hearts;
-                </a>
+                  <Link to="/" className="category-btn"  id="skills"  style={{animation: "pulse 2s ease-in-out infinite", border: "2px solid rgba(52, 152, 219, 0.7)" }} >   My Fruits website &hearts; </Link>
                 </div>
               </div>
             </div>
@@ -78,18 +70,9 @@ function ProjectsPage() {
                 </p>
 
                 <div style={{display:'flex',justifyContent:'center'}}>
-                <a
-                  href="/"
-                  className="category-btn"
-                  style={{
-                    animation: "pulse 2s ease-in-out infinite",
-                    border: "2px solid rgba(52, 152, 219, 0.7)",
-                  }}
-                  id="skills"
-                >
-                  Go dady website &hearts;
-                </a>
+                  <Link to="/" className="category-btn"  id="skills"  style={{animation: "pulse 2s ease-in-out infinite", border: "2px solid rgba(52, 152, 219, 0.7)" }} >   Go dady website &hearts; </Link>
                 </div>
+
               </div>
             </div>
           </div>
@@ -113,17 +96,7 @@ function ProjectsPage() {
                 </p>
 
                 <div style={{display:'flex',justifyContent:'center'}}>
-                <a
-                  href="/"
-                  className="category-btn"
-                  style={{
-                    animation: "pulse 2s ease-in-out infinite",
-                    border: "2px solid rgba(52, 152, 219, 0.7)",
-                  }}
-                  id="projects"
-                >
-                  Witu Website &hearts;
-                </a>
+                  <Link to="/" className="category-btn"  id="skills"  style={{animation: "pulse 2s ease-in-out infinite", border: "2px solid rgba(52, 152, 219, 0.7)" }} >   Witu website &hearts; </Link>
                 </div>
               </div>
             </div>

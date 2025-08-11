@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 
 const services = [
@@ -16,7 +17,7 @@ const services = [
     title: "Figma Designs",
     description:
       "Designing fantastic figma designs for your websites, Web-systems, portfolios",
-    link: "/figma",
+    link: "/figma"
   },
   {
     icon: "fas fa-server",
@@ -68,43 +69,41 @@ function ServicesPage() {
       </header>
 
       <div className="row g-4">
-        {services.map((service, idx) => (
-          <div key={idx} className="col-12 col-md-6 col-lg-4">
-            <div
-              className="card h-100 shadow-sm border-0"
-              data-aos="fade-up"
-              style={{
-                borderRadius: "15px",
-                transition: "transform 0.3s ease",
-              }}
-            >
-              <div
-                className="card-body d-flex flex-column align-items-center text-center p-4"
-                data-aos="fade-up"
-              >
-                <div
-                  className="mb-4 rounded-circle text-white d-flex align-items-center justify-content-center"
-                  style={{
-                    width: "80px",
-                    height: "80px",
-                    fontSize: "2.5rem",
-                    backgroundColor: "rgb(10, 10, 87)",
-                  }}
-                >
-                  <i className={service.icon}></i>
+                    {services.map((service, idx) => (
+                <div key={idx} className="col-12 col-md-6 col-lg-4">
+                    <div
+                    className="card h-100 shadow-sm border-0"
+                    data-aos="fade-up"
+                    style={{
+                        borderRadius: "15px",
+                        transition: "transform 0.3s ease",
+                    }}
+                    >
+                    <div
+                        className="card-body d-flex flex-column align-items-center text-center p-4"
+                        data-aos="fade-up"
+                    >
+                        <div
+                        className="mb-4 rounded-circle text-white d-flex align-items-center justify-content-center"
+                        style={{
+                            width: "80px",
+                            height: "80px",
+                            fontSize: "2.5rem",
+                            backgroundColor: "rgb(10, 10, 87)",
+                        }}
+                        >
+                        <i className={service.icon}></i>
+                        </div>
+                        <h5 className="card-title fw-bold">{service.title}</h5>
+                        <p className="card-text text-muted">{service.description}</p>
+                        <Link to={service.link} className="btn btn-outline-primary mt-auto">
+                        Learn More
+                        </Link>
+                    </div>
+                    </div>
                 </div>
-                <h5 className="card-title fw-bold">{service.title}</h5>
-                <p className="card-text text-muted">{service.description}</p>
-                <a
-                  href={service.link}
-                  className="btn btn-outline-primary mt-auto"
-                >
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
+                ))}
+
       </div>
 
       <footer className="text-center mt-5 text-muted">

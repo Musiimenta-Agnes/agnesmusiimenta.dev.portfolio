@@ -22,9 +22,11 @@ function OurHeader() {
 
         <nav className="navbar navbar-expand-lg" style={{ width: '100%', boxShadow: '0 2px 5px darkblue', height:'65px', position: 'relative', zIndex: 1000 , color:'white'}}>
           <div className="container-fluid">
-            <a className="navbar-brand agie" href="/" style={{color:'white'}}>
+
+          
+            <div className="navbar-brand agie" style={{color:'white'}}>
               <img src={`${process.env.PUBLIC_URL}/images/Agie.png`} alt="Agie" className="logo" /> AGNES ANGEL
-            </a>
+            </div>
 
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" >
               <span className="navbar-toggler-icon"  style={{backgroundColor:'white'}}></span>
