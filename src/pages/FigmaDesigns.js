@@ -6,12 +6,12 @@ const videoProjects = [
     {
       title: "Website UI Walkthrough",
       description: "Screen recording demo of the website prototype.",
-      videoSrc: `${process.env.PUBLIC_URL}/figmaDesigns/Figma full design.mp4`, // local or external video URL
+      videoSrc: `${process.env.PUBLIC_URL}/figmaDesigns/figmaFullDesign.mp4`// local or external video URL
     },
     {
       title: "React App Demo",
       description: "User flow video for the website design.",
-      videoSrc: `${process.env.PUBLIC_URL}/figmaDesigns/my site.mp4`,
+      videoSrc: `${process.env.PUBLIC_URL}/figmaDesigns/mysite.mp4`
     },
   ];
 

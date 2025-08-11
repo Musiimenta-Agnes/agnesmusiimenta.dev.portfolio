@@ -3,7 +3,7 @@ import React from 'react';
 import './Whatsapp.css';
 
 const WhatsAppButton = () => {
-  const adminPhone = '0742443850'; 
+  const adminPhone = '+256 742443850'; 
   const defaultMessage = encodeURIComponent("Hello Agnes, I need assistance.");
 
   const handleClick = () => {
