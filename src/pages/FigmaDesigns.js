@@ -47,32 +47,6 @@ function FigmaShowcase() {
         </div>
       </section>
 
-      {/* Figma Prototypes */}
-      <section className="mb-5">
-        <h2 className="mb-4">Figma Prototypes</h2>
-        <div className="row">
-          {figmaProjects.map(({ title, description, figmaEmbedUrl }, idx) => (
-            <div className="col-md-6 mb-4" key={idx}>
-              <div className="card shadow-sm">
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    src={figmaEmbedUrl}
-                    allowFullScreen
-                    title={title}
-                    style={{ border: "none" }}
-                  ></iframe>
-                </div>
-                <div className="card-body">
-                  <h5>{title}</h5>
-                  <p>{description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-
     </div>
   );
 }
