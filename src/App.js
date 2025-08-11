@@ -64,7 +64,6 @@ function LayoutWrapper() {
   );
 }
 
-
 function App() {
 
   useEffect(() => {
@@ -80,17 +79,15 @@ function App() {
   }, []);
 
   return (
-
-
-        <Router>
-          <div className="container-fluid">
-            <ToastContainer position="top-center" autoClose={3000} />
-            <LayoutWrapper />
-          </div>
-        </Router>
-      
+    <Router basename="/agnesmusiimenta.dev.portfolio">
+      <div className="container-fluid">
+        <ToastContainer position="top-center" autoClose={3000} />
+        <LayoutWrapper />
+      </div>
+    </Router>
   );
 }
+
 
 export default App;
 
