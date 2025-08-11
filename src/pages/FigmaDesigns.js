@@ -6,28 +6,14 @@ const videoProjects = [
     {
       title: "Website UI Walkthrough",
       description: "Screen recording demo of the website prototype.",
-      videoSrc: "/figmaDesigns/Figma full design.mp4", // local or external video URL
+      videoSrc: `${process.env.PUBLIC_URL}/figmaDesigns/Figma full design.mp4`, // local or external video URL
     },
     {
       title: "React App Demo",
       description: "User flow video for the website design.",
-      videoSrc: "/figmaDesigns/my site.mp4",
+      videoSrc: `${process.env.PUBLIC_URL}/figmaDesigns/my site.mp4`,
     },
   ];
-  
-const figmaProjects = [
-  {
-    title: "Landing Page Design",
-    description: "A clean and modern landing page prototype.",
-    figmaEmbedUrl: "https://www.figma.com/embed?embed_host=share&url=YOUR_FIGMA_FILE_URL", // replace with your actual URL
-  },
-  {
-    title: "Mobile App UI",
-    description: "Interactive mobile app prototype with smooth transitions.",
-    figmaEmbedUrl: "https://www.figma.com/embed?embed_host=share&url=YOUR_FIGMA_FILE_URL",
-  },
-];
-
 
 function FigmaShowcase() {
   return (

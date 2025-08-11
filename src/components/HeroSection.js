@@ -63,7 +63,7 @@ function HeroSection() {
       
           >
             <img
-              src="/images/Agie no back.png"
+              src={`${process.env.PUBLIC_URL}/images/Agie no back.png`}
               alt="Agnes"
               className="open-pic img-fluid"
            />

@@ -23,7 +23,7 @@ function OurHeader() {
         <nav className="navbar navbar-expand-lg" style={{ width: '100%', boxShadow: '0 2px 5px darkblue', height:'65px', position: 'relative', zIndex: 1000 , color:'white'}}>
           <div className="container-fluid">
             <a className="navbar-brand agie" href="/" style={{color:'white'}}>
-              <img src="/images/Agie.png" alt="Agie" className="logo" /> AGNES ANGEL
+              <img src={`${process.env.PUBLIC_URL}/images/Agie.png`} alt="Agie" className="logo" /> AGNES ANGEL
             </a>
 
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" >
