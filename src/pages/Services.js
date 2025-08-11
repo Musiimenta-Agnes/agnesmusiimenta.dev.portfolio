@@ -5,19 +5,20 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 
 const services = [
-  {
-    icon: "fas fa-code",
-    title: "Frontend Development",
-    description:
-      "Build engaging, responsive, and accessible user interfaces using React, Vue, Angular, or plain JavaScript.",
-    link: "/", // your route or external URL
-  },
+
   {
     icon: "fab fa-figma",
     title: "Figma Designs",
     description:
       "Designing fantastic figma designs for your websites, Web-systems, portfolios",
     link: "/figma"
+  },
+  {
+    icon: "fas fa-code",
+    title: "Frontend Development",
+    description:
+      "Build engaging, responsive, and accessible user interfaces using React, Vue, Angular, or plain JavaScript.",
+    link: "/" // your route or external URL
   },
   {
     icon: "fas fa-server",

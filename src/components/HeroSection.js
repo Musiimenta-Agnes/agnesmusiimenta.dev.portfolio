@@ -77,7 +77,11 @@ function HeroSection() {
           </p>
 
           <div style={{justifyContent:'center', display:'flex'}}>
-             <a  className="category-btn" style={{textAlign:'center'}}  href="/My CV pdf.pdf" download >Download CV </a> 
+          <a href={`${process.env.PUBLIC_URL}/My CV pdf.pdf`}  target="_blank" rel="noopener noreferrer" className="category-btn" style={{
+                  animation: "pulse 2s ease-in-out infinite",
+                  border: "2px solid rgba(52, 152, 219, 0.7)"
+                }}>Download CV&hearts;</a>
+
           </div>
           
         </div>

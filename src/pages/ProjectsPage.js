@@ -142,17 +142,18 @@ function ProjectsPage() {
               </p>
 
               <div style={{display:'flex',justifyContent:'center'}}>
-              <a
-                href="/projects/My Graphics Portifolio.pdf"
-                className="category-btn"
-                style={{
+              <a href={`${process.env.PUBLIC_URL}/images/My Graphics Portifolio.pdf`} target="_blank" rel="noopener noreferrer" className="category-btn" style={{
                   animation: "pulse 2s ease-in-out infinite",
                   border: "2px solid rgba(52, 152, 219, 0.7)",
-                }}
+                }}>Graphis Portfolio  &hearts;</a>
+              {/* <a
+                href="/projects/My Graphics Portifolio.pdf"
+               
+
                 download
               >
-                Graphics Portfolio &hearts;
-              </a>
+                Graphics Portfolio 
+              </a> */}
               </div>
             </div>
           </div>
