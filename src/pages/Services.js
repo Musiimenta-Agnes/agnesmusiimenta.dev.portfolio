@@ -25,29 +25,8 @@ const services = [
     title: "Backend Development",
     description:
       "Create scalable RESTful APIs, manage databases, and build robust server-side logic with Node.js, Django, Flask, or Ruby on Rails.",
-    link: "/",
-  },
-  {
-    icon: "fas fa-database",
-    title: "Database Design & Management",
-    description:
-      "Design efficient schemas and ensure data integrity using SQL (MySQL, PostgreSQL) and NoSQL (MongoDB) databases.",
-    link: "/",
-  },
-  {
-    icon: "fas fa-mobile-alt",
-    title: "Mobile App Development",
-    description:
-      "Build cross-platform mobile apps with React Native or Flutter to reach users on iOS and Android.",
-    link: "/",
-  },
-  {
-    icon: "fas fa-lock",
-    title: "Security & Performance Optimization",
-    description:
-      "Ensure your applications are secure, fast, and optimized for the best user experience.",
-    link: "/",
-  },
+    link: "/"
+  }
 ];
 
 function ServicesPage() {

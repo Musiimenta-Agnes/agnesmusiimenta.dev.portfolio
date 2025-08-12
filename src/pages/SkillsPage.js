@@ -5,17 +5,18 @@ import AOS from 'aos'
 import { useEffect } from "react";
 
 const skills = [
-    { name: "HTML5", icon: "fab fa-html5", level: 95 },
-    { name: "CSS3", icon: "fab fa-css3-alt", level: 90 },
-    { name: "JavaScript", icon: "fab fa-js-square", level: 85 },
-    { name: "React", icon: "fab fa-react", level: 85 },
-    { name: "Node.js", icon: "fab fa-node-js", level: 80 },
-    { name: "Python", icon: "fab fa-python", level: 75 },
-    { name: "SQL", icon: "fas fa-database", level: 80 },
-    { name: "Git & GitHub", icon: "fab fa-git-alt", level: 80 },
-    { name: "Postman", icon: "fas fa-envelope-open-text", level: 80 },  // no official icon for Postman, this is a close alternative
-    { name: "Figma", icon: "fab fa-figma", level: 93 }, // FontAwesome has figma icon in newer versions
-    { name: "Trello", icon: "fab fa-trello", level: 70 },
+  { name: "HTML5", icon: "fab fa-html5", level: 95 },
+  { name: "CSS", icon: "fab fa-css3-alt", level: 90 },
+  { name: "JavaScript", icon: "fab fa-js-square", level: 85 },
+  { name: "React", icon: "fab fa-react", level: 85 },
+  { name: "Node.js", icon: "fab fa-node-js", level: 80 },
+  { name: "Python", icon: "fab fa-python", level: 75 },
+  { name: "MySQL", icon: "fas fa-database", level: 80 },
+  { name: "Git & GitHub", icon: "fab fa-git-alt", level: 80 },
+  { name: "Postman", icon: "fas fa-envelope-open-text", level: 80 },  
+  { name: "Figma", icon: "fab fa-figma", level: 93 },  
+  { name: "Trello", icon: "fab fa-trello", level: 70 },
+  { name: "Bootstrap", icon: "fab fa-bootstrap", level: 85 }
   ];
   
 
