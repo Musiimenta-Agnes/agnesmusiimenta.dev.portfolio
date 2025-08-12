@@ -21,13 +21,7 @@ function HeroSection() {
     const el = textRef.current;
     if (!el) return;
 
-    console.log('Typing effect started'); // for debugging — remove later
-
-    // Optional strict guard: uncomment only if necessary
-    // if (typingHasRun) return;
-    // typingHasRun = true;
-
-    // Clear any previous content so we always start fresh
+    console.log('Typing effect started'); 
     el.textContent = "";
 
     let i = 0;
@@ -53,6 +47,22 @@ function HeroSection() {
   useEffect(() => {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   }, []);
+
+
+  
+const videoProjects = [
+    {
+      title: "Okuosi Website UI Walkthrough",
+      description: "Screen recording demo of the website prototype.",
+      videoSrc: `${process.env.PUBLIC_URL}/projects/Okuosi vid.mp4`// local or external video URL
+    },
+    {
+      title: "Figma Designs",
+      description: "User flow video for the website figma design.",
+      videoSrc: `${process.env.PUBLIC_URL}/projects/Graphics Portfolio.mp4`
+    },
+  ];
+
 
   return (
     <div className="container-fluid hero-container">
@@ -88,21 +98,62 @@ function HeroSection() {
 
 
 
+ 
+        <div className="row mt-5" data-aos="fade-up">
+  {/* First Column */}
+  <div className="col-12 col-md-6">
+    <h3 style={{ color: "rgb(10, 10, 87)", fontWeight: "700" }}>Why Choose Me?</h3>
+    <ul style={{ listStyleType: "none", paddingLeft: 0, fontSize: "18px", color: "#333" }}>
+      <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Expertise in both frontend and backend development</li>
+      <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Creative graphic design skills to make your brand stand out</li>
+      <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Responsive, user-friendly, and optimized websites</li>
+      <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Strong focus on clean, maintainable, and scalable code</li>
+      <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Passionate about delivering quality on time</li>
+    </ul>
+  </div>
 
-          <div className="row mt-5" data-aos="fade-up">
-            <div className="col-12 col-md-8 offset-md-2 ">
-              <h3 style={{ color: "rgb(10, 10, 87)", fontWeight: "700" }}>Why Choose Me?</h3>
-              <ul style={{ listStyleType: "none", paddingLeft: 0, fontSize: "18px", color: "#333" }}>
-                <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Expertise in both frontend and backend development</li>
-                <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Creative graphic design skills to make your brand stand out</li>
-                <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Responsive, user-friendly, and optimized websites</li>
-                <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Strong focus on clean, maintainable, and scalable code</li>
-                <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Passionate about delivering quality on time</li>
-              </ul>
-            </div>
-          </div>
+  {/* Second Column */}
+  <div className="col-12 col-md-6">
+    <h3 style={{ color: "rgb(10, 10, 87)", fontWeight: "700" }}>Graphic Design Expertise?</h3>
+      <p>
+     My background in graphic design enhances my ability to develop visually striking websites and applications. 
+     I have an eye for design and an understanding of color theory, typography, and layout composition, 
+      I incorporate into all of my projects. Whether creating logos, custom icons, banners, or any other graphical element,
+       I ensure that my designs are both creative and functional, aligning perfectly with the client’s brand identity.</p>
+  </div>
+</div>
+
+
 
       </div>
+<br/>
+
+      {/* Videos */}
+      <section>
+        <h2 className="mb-4 text-center"style={{fontWeight:'bold',color: "rgb(10, 10, 87)"}}>Design Demo Videos  Lets Together Design the Best UI's for Our Clients</h2>
+        <br/>
+        <div className="row">
+          {videoProjects.map(({ title, description, videoSrc }, idx) => (
+            <div className="col-md-6 mb-4" data-aos='fade-up' key={idx}>
+              <div className="card shadow-sm">
+                <video
+                  controls
+                  className="w-100"
+                  style={{ maxHeight: "360px", objectFit: "contain" }}
+                >
+                  <source src={videoSrc} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="card-body">
+                  <h5>{title}</h5>
+                  <p>{description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
 
       

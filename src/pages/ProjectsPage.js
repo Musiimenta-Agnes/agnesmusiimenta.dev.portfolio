@@ -33,74 +33,95 @@ function ProjectsPage() {
               style={{
                 width: '100%',
                 backgroundColor: "aliceblue",
-                height: 200,
                 borderStyle: "solid 5px",
 
               }}
             >
-              <div className="card-body">
-                <p style={{ width: "100%", color: "black" , textAlign:'center'}}>
-                  As a passionate and versatile web developer based in Wandegeya,
-                  I specialize in crafting seamless digital experiences by
-                  blending creativity with technical expertise.
-                </p>
-                <div style={{display:'flex',justifyContent:'center'}}>
-                  <Link to="/" className="category-btn"  id="skills"  style={{animation: "pulse 2s ease-in-out infinite", border: "2px solid rgba(52, 152, 219, 0.7)" }} >   My Fruits website &hearts; </Link>
-                </div>
+              <div className="card-body" style={{width:"100%", height:'100%'}}>
+              <div data-aos="fade-right">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/Fruits image.JPG`}
+              alt="Agnes"
+              style={{width:'100%'}}
+           />
+            </div>
+            <br/>
+            <div style={{justifyContent:'center', display:'flex'}}>
+          <a href={`${process.env.PUBLIC_URL}/projects/Fruit vid.mp4`}  target="_blank" rel="noopener noreferrer" className="category-btn" style={{
+                  animation: "pulse 2s ease-in-out infinite",
+                  border: "2px solid rgba(52, 152, 219, 0.7)"
+                }}>My Fruits Website &hearts;</a>
+
+          </div>
               </div>
             </div>
           </div>
+
 
           {/* Second column */}
-          <div className="col-12 col-md-4 mb-3 mb-lg-0"  data-aos="fade-up">
+          {/* First column */}
+          <div className="col-12 col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
             <div
               className="card"
               style={{
                 width: '100%',
                 backgroundColor: "aliceblue",
-                height: 200,
                 borderStyle: "solid 5px",
+
               }}
             >
-              <div className="card-body">
-                <p style={{ width: "100%", color: "black", textAlign:'center' }}>
-                  I have a deep understanding of HTML, CSS, and JavaScript,
-                  ensuring that the websites I create are both functional and
-                  beautiful.
-                </p>
+              <div className="card-body" style={{width:"100%", height:'100%'}}>
+              <div data-aos="fade-right">
+            <img
+              src={`${process.env.PUBLIC_URL}/figmaDesigns/Okuosi Home Page.JPG`}
+              alt="Agnes"
+              style={{width:'100%'}}
+           />
+            </div>
+            <br/>
+            
+          <div style={{justifyContent:'center', display:'flex'}}>
+          <a href={`${process.env.PUBLIC_URL}/projects/Okuosi vid.mp4`}  target="_blank" rel="noopener noreferrer" className="category-btn" style={{
+                  animation: "pulse 2s ease-in-out infinite",
+                  border: "2px solid rgba(52, 152, 219, 0.7)"
+                }}>Okuosi Website &hearts;</a>
 
-                <div style={{display:'flex',justifyContent:'center'}}>
-                  <Link to="/" className="category-btn"  id="skills"  style={{animation: "pulse 2s ease-in-out infinite", border: "2px solid rgba(52, 152, 219, 0.7)" }} >   Go dady website &hearts; </Link>
-                </div>
-
+          </div>
               </div>
             </div>
           </div>
+
 
           {/* Third column */}
-          <div className="col-12 col-md-4 mb-3 mb-lg-0"  data-aos="fade-up">
+          {/* First column */}
+          <div className="col-12 col-md-4 mb-3 mb-lg-0" data-aos="fade-up">
             <div
               className="card"
               style={{
                 width: '100%',
                 backgroundColor: "aliceblue",
-                height: 200,
                 borderStyle: "solid 5px",
+
               }}
             >
-              <div className="card-body">
-                <p style={{ width: "100%", color: "black", textAlign:'center' }}>
-                  Over the years, I’ve had the privilege of working on a variety
-                  of projects that demonstrate my versatility and commitment to
-                  delivering high-quality solutions
-                </p>
-
+              <div className="card-body" style={{width:"100%", height:'100%'}}>
+              <div data-aos="fade-right">
+            <img
+              src={`${process.env.PUBLIC_URL}/figmaDesigns/My port home.JPG`}
+              alt="Agnes"
+              style={{width:'100%'}}
+           />
+            </div>
+            <br/>
                 <div style={{display:'flex',justifyContent:'center'}}>
-                  <Link to="/" className="category-btn"  id="skills"  style={{animation: "pulse 2s ease-in-out infinite", border: "2px solid rgba(52, 152, 219, 0.7)" }} >   Witu website &hearts; </Link>
+                  <Link to="/" className="category-btn"  id="skills"  style={{animation: "pulse 2s ease-in-out infinite", border: "2px solid rgba(52, 152, 219, 0.7)" }} >   My Portfolio &hearts; </Link>
                 </div>
               </div>
             </div>
           </div>
+
+
+
         </div>
 
         <br />
@@ -135,12 +156,16 @@ function ProjectsPage() {
             style={{ marginRight: 90, width: 400 }}
           >
             <div className="card-body" >
-              <p style={{ width: "90%", color: "black", textAlign:'center' }}>
-                Over the years, I’ve had the privilege of working on a variety of
-                projects that demonstrate my versatility and commitment to
-                delivering high-quality solutions
-              </p>
+    
+            <div data-aos="fade-right">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/Graphics port.JPG`}
+              alt="Agnes"
+              style={{width:'100%'}}
+           />
+            </div>
 
+<br/>
               <div style={{display:'flex',justifyContent:'center'}}>
               <a href={`${process.env.PUBLIC_URL}/images/My Graphics Portifolio.pdf`} target="_blank" rel="noopener noreferrer" className="category-btn" style={{
                   animation: "pulse 2s ease-in-out infinite",

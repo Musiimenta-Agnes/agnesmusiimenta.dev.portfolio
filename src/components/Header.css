@@ -43,6 +43,10 @@
 
 }
 
+.nav-link:active{
+  color: #00D4FF !important;
+}
+
 nav li {
     float: left;
     list-style: none;

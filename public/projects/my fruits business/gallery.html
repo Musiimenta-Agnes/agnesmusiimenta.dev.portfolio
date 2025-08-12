@@ -34,9 +34,71 @@
             95% { transform: translateX(-300%); }
             100% { transform: translateX(-400%); }
         }
+
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+       
+        nav ul {
+            display: block;
+            display: flex;
+            right: 0;
+            flex-direction: row;
+       
+            list-style: none;
+        }
+        nav li {
+            float: left;
+           
+
+        }
+        nav li a {
+            padding: 40px 40px;
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+       li a:hover {
+            color: rgb(12, 8, 241);
+        }
+
+        button a:hover  {
+            color: blue;
+        }
+    </style>
+
     </style>
 </head>
 <body>
+
+    <header  style="  width: 100%;  height: 50px; padding: 6px 6px;  background-color: rgb(235, 202, 202);">
+        <div  style="display: flex;  flex-wrap: wrap;  justify-content: space-between;">
+    
+          <div>
+            <img src="./images/logo.jfif" alt="logo"   style="width: 60px;  height: 60px; clip-path: circle(50% at 50% 50%); object-fit: cover;">
+           </div>
+    
+    
+               <div>
+                  <nav>
+                     <ul>
+                        <li><a href="./index.html">Home  &hearts;</a></li>
+                          <li><a href="./pages/about.html">About us  &hearts;</a></li>
+                          <li><a href="./pages/services.html">Services  &heartsuit;</a></li>
+                          <li><a href="./gallery.html">Gallery  &hearts;</a></li>
+                          <li><a href="./pages/create.html">Sign Up &heartsuit;  </a></li>
+                
+                     </ul>
+                  </nav>
+                </div>
+    
+    
+    
+        </div>
+    </header>
     <div>
         <div  class="slideshow">
             <div  class="slides">
