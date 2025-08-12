@@ -40,7 +40,7 @@ function AboutUs() {
                             <p style={{ width: '100%', color: 'black', textAlign:'center' }}>
 
                             <span >Hello! I'm Musiimenta Agnes Angel</span> , a passionate and
-                                dedicated web developer with 2 years of experience in crafting dynamic and responsive
+                                dedicated web developer in crafting dynamic and responsive
                                 websites.
                                 I specialize in creating seamless user experiences and beautiful front-end designs. I
                                 have honed my skills through continuous learning and real-world projects.
