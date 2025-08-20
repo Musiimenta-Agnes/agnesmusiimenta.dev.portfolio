@@ -50,8 +50,9 @@ function OurFooter() {
           backgroundColor: '#00D4FF',
           textAlign: 'center',
           color: 'black',
-          height: '45px',
-          paddingTop: '10px'
+          height: '100%',
+          paddingTop: '10px',
+          paddingBottom:'10px'
         }}>
           <b>&copy; 2025 Musiimenta Agnes Angel. All rights reserved.</b>
         </div>
