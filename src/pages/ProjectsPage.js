@@ -38,7 +38,7 @@ function ProjectsPage() {
               }}
             >
               <div className="card-body" style={{width:"100%", height:'100%'}}>
-              <div data-aos="fade-right">
+              <div data-aos="fade-up">
             <img
               src={`${process.env.PUBLIC_URL}/images/Fruits image.JPG`}
               alt="Agnes"
@@ -71,7 +71,7 @@ function ProjectsPage() {
               }}
             >
               <div className="card-body" style={{width:"100%", height:'100%'}}>
-              <div data-aos="fade-right">
+              <div data-aos="fade-up">
             <img
               src={`${process.env.PUBLIC_URL}/figmaDesigns/Okuosi Home Page.JPG`}
               alt="Agnes"
@@ -105,7 +105,7 @@ function ProjectsPage() {
               }}
             >
               <div className="card-body" style={{width:"100%", height:'100%'}}>
-              <div data-aos="fade-right">
+              <div data-aos="fade-up">
             <img
               src={`${process.env.PUBLIC_URL}/figmaDesigns/My port home.JPG`}
               alt="Agnes"
@@ -157,7 +157,7 @@ function ProjectsPage() {
           >
             <div className="card-body" >
     
-            <div data-aos="fade-right">
+            <div data-aos="fade-up">
             <img
               src={`${process.env.PUBLIC_URL}/images/Graphics port.JPG`}
               alt="Agnes"

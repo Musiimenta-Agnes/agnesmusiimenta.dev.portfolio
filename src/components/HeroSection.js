@@ -7,6 +7,11 @@ import './HeroSection.css';
 import './Header.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import AboutUs from "../pages/About";
+import ProjectsPage from "../pages/ProjectsPage";
+import ServicesPage from "../pages/Services";
+import ContactUs from "../pages/Contact";
+import SkillsPage from "../pages/SkillsPage";
 
 // Optional: module-level guard (only use if you still see duplicates in dev StrictMode)
 // let typingHasRun = false;
@@ -101,7 +106,7 @@ const videoProjects = [
  
         <div className="row mt-5" data-aos="fade-up">
   {/* First Column */}
-  <div className="col-12 col-md-6">
+  {/* <div className="col-12 col-md-6">
     <h3 style={{ color: "rgb(10, 10, 87)", fontWeight: "700" }}>Why Choose Me?</h3>
     <ul style={{ listStyleType: "none", paddingLeft: 0, fontSize: "18px", color: "#333" }}>
       <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Expertise in both frontend and backend development</li>
@@ -110,20 +115,18 @@ const videoProjects = [
       <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Strong focus on clean, maintainable, and scalable code</li>
       <li><i className="bi bi-check-circle-fill text-primary me-2"></i>Passionate about delivering quality on time</li>
     </ul>
-  </div>
+  </div> */}
 
-  {/* Second Column */}
-  <div className="col-12 col-md-6">
-    <h3 style={{ color: "rgb(10, 10, 87)", fontWeight: "700" }}>Graphic Design Expertise?</h3>
-      <p>
-     My background in graphic design enhances my ability to develop visually striking websites and applications. 
-     I have an eye for design and an understanding of color theory, typography, and layout composition, 
-      I incorporate into all of my projects. Whether creating logos, custom icons, banners, or any other graphical element,
-       I ensure that my designs are both creative and functional, aligning perfectly with the client’s brand identity.</p>
-  </div>
 </div>
 
+<AboutUs/>
 
+<br/><br/>
+
+<SkillsPage/>
+<br/><br/>
+
+  <ProjectsPage/>
 
       </div>
 <br/>
@@ -154,6 +157,19 @@ const videoProjects = [
         </div>
       </section>
 
+
+<br/>
+<br />
+      <h1 className="display-6 text-center fw-bold">My Services</h1>
+      <br />
+<ServicesPage/>
+
+<br/>
+
+<br />
+      <h1 className="display-6 text-center fw-bold">Contact me</h1>
+      <br />
+<ContactUs/>
 
 
       
